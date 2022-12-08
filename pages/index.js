@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Slider from "../components/hero-slider";
+import Slider from "../components/heroSlider";
 // import Image from "next/image";
 // import styles from "../styles/Home.module.css";
 
