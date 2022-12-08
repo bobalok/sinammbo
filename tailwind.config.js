@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        "logo-default": "url('/favicon/sinamm_logo.svg')",
+      }),
+    },
   },
 
   plugins: [],

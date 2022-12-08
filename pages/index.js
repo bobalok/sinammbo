@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Slider from "../components/hero-slider";
 // import Image from "next/image";
 // import styles from "../styles/Home.module.css";
 
@@ -16,6 +17,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
+      <Slider />
       <h1 className='text-center text-5xl'>Henlo World</h1>
     </div>
   );
