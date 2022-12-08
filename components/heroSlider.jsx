@@ -1,5 +1,5 @@
 // import Swiper core and required modules
-import { Pagination, Scrollbar, A11y, Autoplay, EffectFade } from "swiper";
+import { Pagination, Scrollbar, A11y, Autoplay, EffectCreative } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -8,7 +8,7 @@ import "swiper/css";
 // import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "swiper/css/effect-fade";
+import "swiper/css/effect-creative";
 
 import Image from "next/legacy/image";
 
@@ -17,7 +17,7 @@ import slider1 from "../public/images/slider-images/1.jpg";
 import slider2 from "../public/images/slider-images/2.jpg";
 import slider3 from "../public/images/slider-images/3.jpg";
 import slider4 from "../public/images/slider-images/4.jpeg";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Slider() {
   return (
@@ -31,7 +31,7 @@ export default function Slider() {
             Scrollbar,
             A11y,
             Autoplay,
-            EffectFade,
+            EffectCreative,
           ]}
           // spaceBetween={20}
           autoplay={{
@@ -39,7 +39,7 @@ export default function Slider() {
             disableOnInteraction: false,
             pauseOnMouseEnter: false,
           }}
-          effect='fade'
+          effect='creative'
           slidesPerView={1}
           // navigation
           pagination={{
@@ -60,23 +60,22 @@ export default function Slider() {
             />
             <div className='block inset-0 absolute bg-zinc-900 bg-opacity-70'></div>
             <div className='relative max-w-screen-xl px-4 py-44 mx-auto lg:h-screen lg:items-center lg:flex'>
-              <div className='max-w-7xl mx-auto text-center'>
+              <div className='max-w-7xl mx-auto text-left'>
                 <h1 className='text-4xl font-bold sm:text-7xl text-white'>
-                  COMBINE CYCLE SINGLE SHAFT POWER PLANT (NORTH AND SOUTH 400MW
-                  EACH)
+                  WE ARE BETTER THAN JUST ENGINEERING
                 </h1>
 
-                <p className='mt-4 sm:leading-relaxed text-xl sm:text-2xl text-white'>
+                {/* <p className='mt-4 sm:leading-relaxed text-xl sm:text-2xl text-white'>
                   Ashuganj Power Station Company Ltd. (APSCL)
-                </p>
+                </p> */}
 
-                <div className='flex flex-wrap justify-center gap-4 mt-8'>
+                {/* <div className='flex flex-wrap justify-center gap-4 mt-8'>
                   <Link href='/portfolio'>
                     <a className='block  px-12 py-3 text-lg font-medium text-white hover:text-black border-2 border-white rounded sm:w-auto hover:bg-white transition-all'>
                       See more
                     </a>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </SwiperSlide>
@@ -94,22 +93,22 @@ export default function Slider() {
             />
             <div className='block inset-0 absolute bg-zinc-900 bg-opacity-70'></div>
             <div className='relative max-w-screen-xl px-4 py-44 mx-auto lg:h-screen lg:items-center lg:flex'>
-              <div className='max-w-7xl mx-auto text-center'>
+              <div className='max-w-7xl mx-auto text-left'>
                 <h1 className='text-4xl font-bold sm:text-7xl text-white'>
-                  PAYRA 660 x 2 MW SUPER CRITICAL COAL BASED POWER PLANT
+                  OUR REPUTATION IS AS SOLID AS CONCRETE
                 </h1>
 
-                <p className='mt-4 sm:leading-relaxed text-xl sm:text-2xl text-white'>
+                {/* <p className='mt-4 sm:leading-relaxed text-xl sm:text-2xl text-white'>
                   North West Power Generation Company Limited (NWPGCL)
-                </p>
+                </p> */}
 
-                <div className='flex flex-wrap justify-center gap-4 mt-8'>
+                {/* <div className='flex flex-wrap justify-center gap-4 mt-8'>
                   <Link href='/portfolio'>
                     <a className='block  px-12 py-3 text-lg font-medium text-white hover:text-black border-2 border-white rounded sm:w-auto hover:bg-white transition-all'>
                       See more
                     </a>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </SwiperSlide>
@@ -128,58 +127,26 @@ export default function Slider() {
             />
             <div className='block inset-0 absolute bg-zinc-900 bg-opacity-70'></div>
             <div className='relative max-w-screen-xl px-4 py-44 mx-auto lg:h-screen lg:items-center lg:flex'>
-              <div className='max-w-7xl mx-auto text-center'>
+              <div className='max-w-7xl mx-auto text-left'>
                 <h1 className='text-4xl font-bold sm:text-7xl text-white'>
-                  SHIRAJ GANJ-2 225MW CCPP OF NWPGCL
+                  WHEN YOU NEED EXPERIENCE, WE HAVE IT COVERED
                 </h1>
 
-                <p className='mt-4 sm:leading-relaxed text-xl sm:text-2xl text-white'>
+                {/* <p className='mt-4 sm:leading-relaxed text-xl sm:text-2xl text-white'>
                   North West Power Generation Company Limited (NWPGCL)
-                </p>
+                </p> */}
 
-                <div className='flex flex-wrap justify-center gap-4 mt-8'>
+                {/* <div className='flex flex-wrap justify-center gap-4 mt-8'>
                   <Link href='/portfolio'>
                     <a className='block  px-12 py-3 text-lg font-medium text-white hover:text-black border-2 border-white rounded sm:w-auto hover:bg-white transition-all'>
                       See more
                     </a>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </SwiperSlide>
           {/* slider4 */}
-          <SwiperSlide>
-            <Image
-              className=''
-              src={slider4}
-              alt='North West Power Generation Company Limited (NWPGCL)'
-              layout='fill'
-              objectFit='cover'
-              quality='50'
-              placeholder='blur' // Optional blur-up while loading
-              priority
-            />
-            <div className='block inset-0 absolute bg-zinc-900 bg-opacity-70'></div>
-            <div className='relative max-w-screen-xl px-4 py-44 mx-auto lg:h-screen lg:items-center lg:flex'>
-              <div className='max-w-7xl mx-auto text-center'>
-                <h1 className='text-4xl font-bold sm:text-7xl text-white'>
-                  SHIRAJ GANJ-3 225MW CCPP OF NWPGCL
-                </h1>
-
-                <p className='mt-4 sm:leading-relaxed text-xl sm:text-2xl text-white'>
-                  North West Power Generation Company Limited (NWPGCL)
-                </p>
-
-                <div className='flex flex-wrap justify-center gap-4 mt-8'>
-                  <Link href='/portfolio'>
-                    <a className='block  px-12 py-3 text-lg font-medium text-white hover:text-black border-2 border-white rounded sm:w-auto hover:bg-white transition-all'>
-                      See more
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
         </Swiper>
       </div>
     </>

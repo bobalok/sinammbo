@@ -66,7 +66,7 @@ export default function navbar() {
   return (
     <Disclosure
       as='nav'
-      className='sticky z-50 top-0 shadow-md px-4 backdrop-blur-lg bg-white/90'
+      className='sticky z-50 top-0 shadow-md px-32 backdrop-blur-lg bg-white/90'
     >
       {({ open }) => (
         <>
@@ -399,7 +399,7 @@ export default function navbar() {
               {defaultNavigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as='a'
+                  as='div'
                   href={item.href}
                   className={classNames(
                     item.current

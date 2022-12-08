@@ -13,3 +13,24 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+/***************Custom Styled SwiperJS******************/
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  -webkit-touch-callout: none;
+  user-select: none !important;
+  text-align: center !important;
+  backface-visibility: hidden;
+}
+
+/* .swiper-slide {
+      width: auto !important;
+    } */
+
+/***************Custom Styled SwiperJS******************/
