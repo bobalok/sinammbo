@@ -1,9 +1,10 @@
 import Head from "next/head";
-import Slider from "../components/heroSlider";
+import Slider from "../components/Slider";
 // import Image from "next/image";
 // import styles from "../styles/Home.module.css";
 
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
+import Services from "../components/Services";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Slider />
-      <h1 className='text-center text-5xl'>Henlo World</h1>
+      <Services />
     </div>
   );
 }

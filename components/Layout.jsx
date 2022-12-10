@@ -1,8 +1,8 @@
-import Header from "./header";
-import Footer from "./footer";
-import Meta from "./meta";
+import Header from "./Header";
+import Footer from "./Footer";
+import Meta from "./Meta";
 
-export default function Layout({ children }) {
+function Layout({ children }) {
   return (
     <>
       <Meta />
@@ -14,3 +14,5 @@ export default function Layout({ children }) {
     </>
   );
 }
+
+export default Layout;

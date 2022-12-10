@@ -62,11 +62,11 @@ function MyLink(props) {
   );
 }
 
-export default function navbar() {
+export default function Navbar() {
   return (
     <Disclosure
       as='nav'
-      className='sticky z-50 top-0 shadow-md px-32 backdrop-blur-lg bg-white/90'
+      className='sticky z-50 top-0 shadow-md px-4 lg:px-64 backdrop-blur-lg bg-white/90'
     >
       {({ open }) => (
         <>
