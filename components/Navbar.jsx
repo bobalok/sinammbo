@@ -66,7 +66,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as='nav'
-      className='sticky z-50 top-0 shadow-md px-4 lg:px-64 backdrop-blur-lg bg-white/90'
+      className='sticky z-50 top-0 shadow-md px-4 backdrop-blur-lg bg-white/90'
     >
       {({ open }) => (
         <>
@@ -92,7 +92,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className='hidden lg:block sm:ml-6 select-none '>
-                <div className='flex md:space-x-4 lg:space-x-10 py-4'>
+                <div className='flex space-x-4 xl:space-x-10 py-4'>
                   {defaultNavigation.map((item) => (
                     <MyLink
                       key={item.name}
