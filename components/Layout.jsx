@@ -1,12 +1,12 @@
-import Header from "./Header";
 import Footer from "./Footer";
 import Meta from "./Meta";
+import Navbar from "./Navbar";
 
 function Layout({ children }) {
   return (
     <>
       <Meta />
-      <Header />
+      <Navbar />
       <div className='min-h-screen'>
         <main>{children}</main>
       </div>

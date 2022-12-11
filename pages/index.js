@@ -1,15 +1,13 @@
 import Head from "next/head";
-import Slider from "../components/Slider";
 // import Image from "next/image";
 // import styles from "../styles/Home.module.css";
+import Slider from "../components/Slider";
 
-import Navbar from "../components/Navbar";
-import Services from "../components/Services";
-import Footer from "../components/Footer";
+import ReliableSect from "../components/ReliableSect";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Sinamm Development </title>
         <meta
@@ -18,10 +16,8 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Navbar />
       <Slider />
-      <Services />
-      <Footer />
-    </div>
+      <ReliableSect />
+    </>
   );
 }
