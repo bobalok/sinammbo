@@ -112,7 +112,6 @@ export default function Slider() {
               </div>
             </div>
           </SwiperSlide>
-
           {/* slider3 */}
           <SwiperSlide>
             <Image

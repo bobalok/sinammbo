@@ -4,6 +4,7 @@ import Head from "next/head";
 import Slider from "../components/Slider";
 
 import ReliableSect from "../components/ReliableSect";
+import OurBSect from "../components/OurBSect";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
       <Slider />
       <ReliableSect />
+      <OurBSect />
     </>
   );
 }

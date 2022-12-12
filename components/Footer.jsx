@@ -30,8 +30,7 @@ const Footer = () => {
               <div className='flex justify-center bg-logo-default h-14 bg-no-repeat text-teal-600 lg:justify-start'></div>
 
               <p className='mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Incidunt consequuntur amet culpa cum itaque neque.
+                House # 57/C, Road # 15/A, Dhanmondi R/A, Dhaka-1209
               </p>
             </div>
 

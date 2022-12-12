@@ -1,8 +1,8 @@
 const ReliableSect = () => {
   return (
     <>
-      <section className='py-16'>
-        <div className='max-w-screen-xl px-4 py-4 mx-auto sm:px-6 lg:px-8'>
+      <section className='py-16 text-gray-700'>
+        <div className='max-w-screen-xl p-4 mx-auto sm:px-6 lg:px-8'>
           <div className='max-w-lg'>
             <h2 className='text-3xl font-bold sm:text-4xl'>Reliable In</h2>
           </div>
