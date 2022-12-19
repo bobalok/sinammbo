@@ -5,9 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
-import { Grid, Pagination } from "swiper";
+import { Grid, Pagination, Navigation } from "swiper";
 
 import Image from "next/legacy/image";
 
@@ -24,6 +25,14 @@ const OurBSect = () => {
     "obs4.jpg",
     "obs5.jpg",
     "obs6.jpg",
+    "obs7.jpg",
+    "obs8.jpg",
+    "obs9.jpeg",
+    "obs10.jpg",
+    "obs11.jpg",
+    "obs12.jpg",
+    "obs13.jpg",
+    "obs14.jpg",
   ];
   return (
     <>
@@ -34,23 +43,27 @@ const OurBSect = () => {
             <h2 className='text-3xl font-bold sm:text-4xl'>Our Business</h2>
           </div>
           {/* swiperjs grid */}
-          <div className='grid pt-8'>
+          <div className='pt-8'>
             <Swiper
               slidesPerView={3}
               grid={{
                 rows: 2,
+                fill: "row",
               }}
-              spaceBetween={10}
+              spaceBetween={30}
               pagination={{
                 clickable: true,
               }}
-              modules={[Grid, Pagination]}
+              navigation={{
+                clickable: true,
+              }}
+              modules={[Grid, Pagination, Navigation]}
               className='mySwiper'
             >
               {OurBSectPhotos.map((photo) => (
-                <SwiperSlide className='w-[450px] h-[300px]'>
+                <SwiperSlide className='mySwiperSlide'>
                   <Image
-                    className='rounded-lg'
+                    className='rounded-lg relative'
                     src={`/images/slider-images/OurBSect/${photo.toString()}`}
                     height={300}
                     width={450}
@@ -58,7 +71,6 @@ const OurBSect = () => {
                   />
                 </SwiperSlide>
               ))}
-              ;
               {/* <SwiperSlide className='w-[450px] h-[300px]'>
                 <Image
                   className='rounded-lg'
