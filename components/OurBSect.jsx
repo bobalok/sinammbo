@@ -19,20 +19,20 @@ import slider33 from "../public/images/slider-images/3.jpg";
 
 const OurBSect = () => {
   const OurBSectPhotos = [
-    "obs1.jpg",
-    "obs2.jpg",
-    "obs3.jpg",
-    "obs4.jpg",
-    "obs5.jpg",
-    "obs6.jpg",
-    "obs7.jpg",
-    "obs8.jpg",
-    "obs9.jpeg",
-    "obs10.jpg",
-    "obs11.jpg",
-    "obs12.jpg",
-    "obs13.jpg",
-    "obs14.jpg",
+    { name: "obs1.jpg", title: "Power Plant Civil Works" },
+    { name: "obs2.jpg", title: "Grid Substation" },
+    { name: "obs3.jpg", title: "Pre Fab Steel Structure" },
+    { name: "obs4.jpg", title: "Sheet Piling Work" },
+    { name: "obs5.jpg", title: "Pre Cast Piling Work" },
+    { name: "obs6.jpg", title: "Water Intake Stucture" },
+    { name: "obs7.jpg", title: "Iron Removal Plant" },
+    { name: "obs8.jpg", title: "Effluent Treatment Plant" },
+    { name: "obs9.jpeg", title: "Soil Filling & Improvement" },
+    { name: "obs10.jpg", title: "Cyclone Shelter" },
+    { name: "obs11.jpg", title: "Factory Building" },
+    { name: "obs12.jpg", title: "Commercial Building" },
+    { name: "obs13.jpg", title: "Apartment Building" },
+    { name: "obs14.jpg", title: "Single Unit Residence Building" },
   ];
   return (
     <>
@@ -60,26 +60,22 @@ const OurBSect = () => {
               modules={[Grid, Pagination, Navigation]}
               className='mySwiper'
             >
-              {OurBSectPhotos.map((photo) => (
-                <SwiperSlide className='mySwiperSlide'>
+              {OurBSectPhotos.map((item) => (
+                <SwiperSlide className='mySwiperSlide relative' key={item.name}>
                   <Image
-                    className='rounded-lg relative'
-                    src={`/images/slider-images/OurBSect/${photo.toString()}`}
+                    className='rounded-lg'
+                    src={`/images/slider-images/OurBSect/${item.name.toString()}`}
                     height={300}
                     width={450}
+                    placeholder='blur'
+                    blurDataURL='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAEAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAbEAEAAgIDAAAAAAAAAAAAAAABAAMCBAURQf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AtuctulYl3S5eBERFL//Z'
                     quality='50'
                   />
+                  <h4 className='absolute inset-x-0 bottom-0 w-full bg-blue-900/90 text-white rounded-b-lg'>
+                    {item.title}
+                  </h4>
                 </SwiperSlide>
               ))}
-              {/* <SwiperSlide className='w-[450px] h-[300px]'>
-                <Image
-                  className='rounded-lg'
-                  src={slider11}
-                  quality='50'
-                  placeholder='blur' // Optional blur-up while loading
-                  priority
-                />
-              </SwiperSlide> */}
             </Swiper>
           </div>
         </div>
