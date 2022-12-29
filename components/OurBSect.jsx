@@ -45,12 +45,38 @@ const OurBSect = () => {
           {/* swiperjs grid */}
           <div className='pt-8'>
             <Swiper
-              slidesPerView={3}
-              grid={{
-                rows: 2,
-                fill: "row",
+              // slidesPerView={3}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                  grid: {
+                    rows: 1,
+                    fill: "row",
+                  },
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                  grid: {
+                    rows: 2,
+                    fill: "row",
+                  },
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  grid: {
+                    rows: 2,
+                    fill: "row",
+                  },
+                },
               }}
-              spaceBetween={30}
+              // grid={{
+              //   rows: 2,
+              //   fill: "row",
+              // }}
+              // spaceBetween={30}
               pagination={{
                 clickable: true,
               }}
@@ -61,7 +87,7 @@ const OurBSect = () => {
               className='mySwiper'
             >
               {OurBSectPhotos.map((item) => (
-                <SwiperSlide className='mySwiperSlide relative' key={item.name}>
+                <SwiperSlide className='mySwiperSlide' key={item.name}>
                   <Image
                     className='rounded-lg'
                     src={`/images/slider-images/OurBSect/${item.name.toString()}`}
